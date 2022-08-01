@@ -146,14 +146,15 @@ function submit(e) {
     // if (validate()) {
         let form = document.getElementById('uptime')
         console.log(document.getElementById("clientId"))
+        console.log(document.getElementById("convertlang"))
         let serverType = "";
         let tserver = true;
         tserver ? serverType = "TSERVER: " : "";
         let formData = {
             client_id: document.getElementById("clientId").value,
             client_name: form.queryValue.value,
-            client_cl: form.convertlang.value,
-            client_cl_name: form.convertlangName.value
+            client_cl: document.getElementById("convertlang").value,
+            client_cl_name: "esTest"
         }
         fetch(form.action, {
             method: "POST",
