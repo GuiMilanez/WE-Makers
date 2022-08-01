@@ -69,14 +69,14 @@ function populateId(e) {
         toggleDisplay('populated-container')
         document.getElementById('clientId').innerHTML = referenceObject[autocomplete.value]
         if (referenceObjectCl[autocomplete.value].length > 1) {
-            let ulEl = document.createElement('ol');
-            ulEl.classList.add('list-group')
-            document.getElementById('convertlang').appendChild(ulEl);
+            let olEl = document.createElement('ol');
+            olEl.classList.add('list-group')
+            document.getElementById('convertlang').appendChild(olEl);
             referenceObjectCl[autocomplete.value].forEach(element => {
                 let liEl = document.createElement('li')
                 liEl.classList.add('list-group-item')
                 liEl.innerHTML = " " + element
-                ulEl.appendChild(liEl)
+                olEl.appendChild(liEl)
             })
         } else {
             document.getElementById('convertlang').innerHTML = referenceObjectCl[autocomplete.value]
@@ -145,11 +145,12 @@ function submit(e) {
     e.preventDefault();
     // if (validate()) {
         let form = document.getElementById('uptime')
+        console.log(document.getElementById("clientId"))
         let serverType = "";
         let tserver = true;
         tserver ? serverType = "TSERVER: " : "";
         let formData = {
-            client_id: form.clientId.value,
+            client_id: document.getElementById("clientId").value,
             client_name: form.queryValue.value,
             client_cl: form.convertlang.value,
             client_cl_name: form.convertlangName.value
