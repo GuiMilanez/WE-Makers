@@ -143,7 +143,7 @@ function remove() {
 
 function submit(e) {
     e.preventDefault();
-    if (validate()) {
+    // if (validate()) {
         let form = document.getElementById('uptime')
         let serverType = "";
         let tserver = true;
@@ -174,10 +174,10 @@ function submit(e) {
         ).then((html) => {
             window.open('page2.html', '_blank');
         });
-    } else {
-        alert('Incorrect Information')
-        return resetForm();
-    }
+    // } else {
+        // alert('Incorrect Information')
+        // return resetForm();
+    // }
 }
 
 function validate() {
