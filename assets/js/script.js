@@ -212,3 +212,4 @@ document.getElementById('resetBtn').addEventListener('click', function (e) {
     resetForm()
 });
 // document.getElementById('inactiveClients').addEventListener('change', autoComplete);
+//Test CE
