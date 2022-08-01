@@ -1,0 +1,116 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #114b8e !important;
+}
+
+.mp-nav {
+    background: #114b8e;
+}
+
+.mp-nav a {
+    width: 10%;
+    margin-left: 25px
+}
+
+.center-form {
+    margin: 0% 20%;
+}
+
+.form-field {
+    margin: 10px 0px;
+}
+
+.form-field label {
+    display: block;
+    margin: 5px 0px;
+}
+
+.form-button-group {
+    margin: 10px 0px;
+    text-align: -webkit-center;
+}
+
+#clientName {
+    font-size: 1.2rem;
+}
+
+.populate-data div {
+    margin: 10px 0px;
+    font-size: 1.2rem;
+}
+
+/* Autocomplete CSS */
+.ui-menu {
+    padding: 0px;
+    list-style: none;
+    z-index: 9999;
+    background-color: aliceblue;
+    text-align: center;
+    opacity: 90%;
+    max-height: 250px;
+    width: 10%;
+    border-style: groove;
+    border-top: none;
+    overflow-y: auto;
+}
+
+.ui-menu li {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.ui-menu li:hover {
+    background-color: gainsboro;
+    border-style: groove;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+/*Form CSS*/
+/* #clientId {
+    text-align: -webkit-center;
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+} */
+
+#queryValue {
+    text-align: -webkit-center;
+}
+
+#buttonContainer {
+    place-content: center !important;
+}
+
+.add {
+    text-align: -webkit-center !important;
+    text-align: center !important;
+    font-size: 1rem;
+    margin-bottom: 10px
+}
+
+.add svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Utility  CSS */
+.LS-none {
+    list-style: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: inherit !important;
+}
